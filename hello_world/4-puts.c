@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-/* a simple text to have the last point with betty */
+/* main - Script used to print a message without use printf */
 
 int main(void)
 {
