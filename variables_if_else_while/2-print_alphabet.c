@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main (void)
+int main(void)
 {
-	char letter = 'a'
+	char letter = 'a';
 	
 		for (letter = 'a'; letter <= 'z'; letter++)
 			putchar(letter);
