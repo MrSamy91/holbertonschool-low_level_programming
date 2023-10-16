@@ -17,7 +17,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 
-
+printf("The number %d is ", n);
 
 
 	return (0);
