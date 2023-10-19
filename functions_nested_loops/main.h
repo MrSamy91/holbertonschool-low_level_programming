@@ -1,7 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
+#include <unistd.h>
 
-#define MAX_ITEMS 100
-#define PI 3.14159265359
+int _putchar(char l);
+void print_alphabet(void);
+
 
 #endif
