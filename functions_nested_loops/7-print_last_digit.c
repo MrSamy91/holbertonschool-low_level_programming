@@ -5,12 +5,15 @@
  * print_last_digit - entry point
  * @num: the number to test
  * Description: absolute value of an integer.
- * Return: lidigit if success
+ * Return: lidit if success
  */
 
 int print_last_digit(int num)
 {
-	int ldigit = num % 10;
-		return (ldigit);
+	int m = num % 10;
+	if (m < 0)
+		m= -1;
+	_putchar(m + '0');
 
+return (m);
 }
