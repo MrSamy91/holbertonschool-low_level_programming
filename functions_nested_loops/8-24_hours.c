@@ -1,11 +1,21 @@
+#include "main.h"
 #include <stdio.h>
 
-int main() {
-    for (int hour = 0; hour < 24; hour++) {
-        for (int minute = 0; minute < 60; minute++) {
-            printf("%02d:%02d\n", hour, minute);
-        }
-    }
+/*
+ * jack_bauer is printing hours and minutes
+ * @jack_bauer : every minutes of a day
+ */
 
-    return 0;
+void jack_bauer(void)
+{
+	int minutes, hours;
+
+	for (hours = 0; hours < 24; hours++)
+	for (minutes = 0; minutes < 60; minutes++)
+	_putchar('0' + (hours / 10));
+	_putchar('0' + (hours % 10));
+	_putchar(':');
+	_putchar('0' + (minutes / 10));
+	_putchar('0' + (minutes % 10));
+	_putchar('\n');
 }
