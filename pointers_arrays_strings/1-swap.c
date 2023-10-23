@@ -11,7 +11,7 @@
 
 void swap_int(int *a, int *b)
 {
-	int tampon = *a,
+	int tampon = *a;
 
 	*a = *b;
 	*b = tampon;
