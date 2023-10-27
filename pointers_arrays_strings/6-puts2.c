@@ -10,11 +10,11 @@
 
 void puts2(char *str)
 {
-	int i;
+	int lettre;
 
-	for (i = 0; str[i] != '\0'; i++)
+	for (lettre = 0; str[lettre] != '\0'; lettre++)
 	{
-		if (i % 2 == 0)
+		if (lettre % 2 == 0)
 sh: 1: q: not found
 sh: 1: q: not found
 	putchar('\n');
