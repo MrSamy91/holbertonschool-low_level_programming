@@ -15,6 +15,7 @@ void puts2(char *str)
 	for (lettre = 0; str[lettre] != '\0'; lettre++)
 	{
 		if (lettre % 2 == 0)
+			putchar(str[lettre]);
+	}
 	putchar('\n');
-}
 }
