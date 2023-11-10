@@ -2,12 +2,35 @@
 #include <stdlib.h>
 
 /**
- * str_concat - function
- * @s1: char ptr
- * @s2: char ptr
+ * _strdup - function
+ * @str: char ptr
  *
  * Return: char ptr
  */
+
+char	*_strdup(char *str)
+{
+char	*r;
+	int	x;
+
+	for (x = 0; str[x]; x++)
+		;
+	r = (char *) malloc(sizeof(char) * (x + 1));
+	if (r == 0)
+		return (0);
+	for (x = 0; str[x]; x++)
+		r[x] = str[x];
+	r[x] = '\0';
+	return (r);
+}
+
+/**
+ * str_concat - function
+ * @s1: char prt
+ * @s2: char prt
+ * Return: char ptr
+ */
+
 char	*str_concat(char *s1, char *s2)
 {
 	char	*r;
